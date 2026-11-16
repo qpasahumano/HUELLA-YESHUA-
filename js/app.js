@@ -1,3 +1,4 @@
+
 import { codigoYeshuaPreguntas } from './content.js';
 
 const i18nTextos = {
@@ -183,20 +184,22 @@ function renderizarPregunta() {
 
   preguntasDiv.innerHTML = `
     <div class="tarjeta-pergamino">
-      <div style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; color: #261004; margin-bottom: 6px; font-weight: 700; font-family: 'Cinzel', serif;">
-        📌 ${categoriaTexto}
-      </div>
-      <div class="referencia-biblica">
-        <strong>📖 ${refBiblicaTexto}</strong><br>
-        <span style="font-size: 0.84rem; font-style: italic;">"${espejoTexto}"</span>
-      </div>
-      <div class="pregunta-enunciado"><h3>${p.id}. ${enunciadoTexto}</h3></div>
-      <div class="opciones-lista">
-        ${opcionesActuales.map((op) => `
-          <button class="opcion-btn" data-peso="${op.peso}">
-            ${op.texto}
-          </button>
-        `).join('')}
+      <div class="contenido-pergamino">
+        <div style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; color: #261004; margin-bottom: 6px; font-weight: 700; font-family: 'Cinzel', serif;">
+          📌 ${categoriaTexto}
+        </div>
+        <div class="referencia-biblica">
+          <strong>📖 ${refBiblicaTexto}</strong><br>
+          <span style="font-size: 0.84rem; font-style: italic;">"${espejoTexto}"</span>
+        </div>
+        <div class="pregunta-enunciado"><h3>${p.id}. ${enunciadoTexto}</h3></div>
+        <div class="opciones-lista">
+          ${opcionesActuales.map((op) => `
+            <button class="opcion-btn" data-peso="${op.peso}">
+              ${op.texto}
+            </button>
+          `).join('')}
+        </div>
       </div>
     </div>
   `;
