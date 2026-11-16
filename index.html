@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,7 +14,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Yeshúa, la huella</title>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
@@ -147,8 +148,8 @@
     }
 
     /* Rostro superior intacto, grande y libre de cajas */
-    .ylh-logo-principal, 
-    #top-slot-container img, 
+    .ylh-logo-principal,
+    #top-slot-container img,
     .rostro-imagen-estatica {
       width: 100px !important;
       height: auto !important;
@@ -307,25 +308,33 @@
       margin-bottom: 3px !important;
       letter-spacing: 0.3px !important;
     }
+
     .tarjeta-pergamino.pregunta-extensa .referencia-biblica {
       font-size: 0.68rem;
       line-height: 1.16;
       padding: 2px 4px;
       margin-bottom: 3px;
     }
+
     .tarjeta-pergamino.pregunta-extensa .referencia-biblica strong {
       font-size: 0.73rem;
     }
+
     .tarjeta-pergamino.pregunta-extensa .texto-espejo {
       font-size: 0.68rem !important;
       line-height: 1.18;
     }
+
     .tarjeta-pergamino.pregunta-extensa .pregunta-enunciado h3 {
       font-size: 0.71rem;
       line-height: 1.18;
       margin-bottom: 4px;
     }
-    .tarjeta-pergamino.pregunta-extensa .opciones-lista { gap: 3px; }
+
+    .tarjeta-pergamino.pregunta-extensa .opciones-lista {
+      gap: 3px;
+    }
+
     .tarjeta-pergamino.pregunta-extensa .opcion-btn {
       font-size: 0.69rem;
       line-height: 1.18;
@@ -338,26 +347,41 @@
       justify-content: safe center;
       scrollbar-width: none;
     }
-    #quiz-container:has(.resultado-final)::-webkit-scrollbar { display: none; }
+
+    #quiz-container:has(.resultado-final)::-webkit-scrollbar {
+      display: none;
+    }
+
     #preguntas-dinamicas:has(.resultado-final) {
       max-height: none;
       flex-shrink: 0;
       justify-content: flex-start;
     }
+
     .resultado-final {
       padding-bottom: 4px !important;
     }
-    .resultado-final h2 { font-size: 1.2rem; margin: 0 0 8px; }
+
+    .resultado-final h2 {
+      font-size: 1.2rem;
+      margin: 0 0 8px;
+    }
+
     .resultado-final .contenedor-huella-usuario {
       margin: 5px auto !important;
       width: 110px !important;
       height: 110px !important;
     }
+
     .resultado-final .texto-invitacion {
       margin-bottom: 8px !important;
       font-size: 0.75rem !important;
     }
-    #btn-reiniciar { display: inline-block; max-width: 100%; }
+
+    #btn-reiniciar {
+      display: inline-block;
+      max-width: 100%;
+    }
 
     /* Categoría / Título del bloque dentro del pergamino en marrón oscuro y tipografía Cinzel */
     .tarjeta-pergamino .categoria-bloque,
@@ -514,6 +538,20 @@
       opacity: 0.9;
       font-family: 'Cinzel', serif;
     }
+
+    /* ==================================================
+       AJUSTE DE LEGIBILIDAD SOBRE EL PAPIRO
+       Contorno marfil y sombra delicada.
+       No altera tamaños, posiciones ni funcionalidades.
+       ================================================== */
+
+    .tarjeta-pergamino .pregunta-enunciado h3,
+    .tarjeta-pergamino .referencia-biblica,
+    .tarjeta-pergamino .referencia-biblica strong {
+      -webkit-text-stroke: 0.35px rgba(255, 244, 216, 0.85);
+      paint-order: stroke fill;
+      text-shadow: 0 1px 1px rgba(255, 245, 220, 0.65);
+    }
   </style>
 </head>
 <body>
@@ -539,10 +577,12 @@
             <h2 data-i18n="titulo">Yeshúa, la huella</h2>
             <p class="subtitulo-bienvenida" data-i18n="subtitulo">¿Cuánto de las enseñanzas de Jesucristo aplicás en tu vida?</p>
           </div>
+
           <div class="contenedor-umbral">
             <img id="btn-comenzar" src="assets/icons/cantaro-agua.png" alt="Revelar mi huella" class="sello-cantaro">
             <span class="texto-tocar-iniciar" data-i18n="tocarIniciar">Tocar para iniciar</span>
           </div>
+
           <div>
             <p class="subtitulo-explicacion" data-i18n="explicacion">Tu huella brillará con fuerza o penumbra, según cómo lleves a Yeshúa en tu andar.</p>
           </div>
