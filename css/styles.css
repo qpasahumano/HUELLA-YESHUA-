@@ -1,4 +1,5 @@
-Body {
+
+body {
   margin: 0;
   padding: 0;
   background-color: #0d0d0f;
@@ -400,4 +401,18 @@ Body {
   letter-spacing: 1px;
   opacity: 0.8;
   font-family: 'Cinzel', serif;
+}
+
+/* ==================================================
+   AJUSTE DE LEGIBILIDAD SOBRE EL PAPIRO
+   Contorno marfil y sombra delicada.
+   No altera tamaños, posiciones ni funcionalidades.
+   ================================================== */
+
+.tarjeta-pergamino .pregunta-enunciado h3,
+.tarjeta-pergamino .referencia-biblica,
+.tarjeta-pergamino .referencia-biblica strong {
+  -webkit-text-stroke: 0.35px rgba(255, 244, 216, 0.85);
+  paint-order: stroke fill;
+  text-shadow: 0 1px 1px rgba(255, 245, 220, 0.65);
 }
