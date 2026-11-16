@@ -1,6 +1,8 @@
+
 /**
- * content.js - Actualizado con el Bloque 10 (La Creación y la Vida)
+ * content.js - Matriz completa de 33 preguntas
  * Yeshúa, la huella / qpasahumano
+ * 11 bloques - Español e inglés - Puntaje máximo: 66
  */
 
 export const codigoYeshuaPreguntas = [
@@ -663,5 +665,71 @@ export const codigoYeshuaPreguntas = [
     referenciaBiblicaEn: "John 6:12 / Psalms 104:14-15",
     espejo: "Yeshúa ordenó recoger lo sobrante para que nada se perdiera, honrando el sustento provisto.",
     espejoEn: "Yeshua ordered the leftovers gathered so nothing would be lost, honoring the provision given."
+  },
+  {
+    id: 31,
+    bloque: 11,
+    categoria: "La Siembra, el Cultivo y sus Frutos",
+    categoriaEn: "Sowing, Cultivation and Their Fruits",
+    enunciado: "Cuando pensás en la tierra, las semillas y el trabajo de quienes producen nuestros alimentos, ¿valorás y respetás ese proceso que sostiene la vida?",
+    enunciadoEn: "When you think about the soil, seeds, and the work of those who produce our food, do you value and respect this process that sustains life?",
+    opciones: [
+      { texto: "No suelo darle importancia al origen de los alimentos ni al esfuerzo necesario para producirlos.", peso: 0 },
+      { texto: "Reconozco su importancia, aunque pocas veces reflexiono sobre el cuidado de la tierra y el trabajo de cultivo.", peso: 1 },
+      { texto: "Valoro la tierra, las semillas y el trabajo de cultivo, y procuro actuar con respeto hacia quienes hacen posible nuestros alimentos.", peso: 2 }
+    ],
+    opcionesEn: [
+      { texto: "I rarely give importance to where food comes from or the effort required to produce it.", peso: 0 },
+      { texto: "I recognize its importance, although I rarely reflect on caring for the soil and the work of cultivation.", peso: 1 },
+      { texto: "I value the soil, seeds, and cultivation work, and I try to act respectfully toward those who make our food possible.", peso: 2 }
+    ],
+    referenciaBiblica: "Marcos 4:3-9",
+    referenciaBiblicaEn: "Mark 4:3-9",
+    espejo: "En la parábola del sembrador, Jesús utiliza la semilla y los distintos terrenos para enseñar sobre la recepción de su mensaje. Hoy, esa imagen también nos invita a reflexionar sobre el valor de la tierra y de quienes la cultivan.",
+    espejoEn: "In the parable of the sower, Jesus uses seeds and different types of soil to teach about receiving his message. Today, that image also invites us to reflect on the value of the land and those who cultivate it."
+  },
+  {
+    id: 32,
+    bloque: 11,
+    categoria: "La Siembra, el Cultivo y sus Frutos",
+    categoriaEn: "Sowing, Cultivation and Their Fruits",
+    enunciado: "Cuando una planta, un cultivo o un espacio natural necesita atención para desarrollarse, ¿procurás cuidarlo con paciencia y responsabilidad?",
+    enunciadoEn: "When a plant, crop, or natural space needs attention to develop, do you try to care for it with patience and responsibility?",
+    opciones: [
+      { texto: "No me interesa su desarrollo y suelo desentenderme cuando requiere esfuerzo o cuidado.", peso: 0 },
+      { texto: "Intento cuidarlo cuando puedo, aunque a veces abandono ese compromiso si los resultados tardan.", peso: 1 },
+      { texto: "Comprendo que el crecimiento necesita tiempo y procuro cuidar y proteger la vida vegetal dentro de mis posibilidades.", peso: 2 }
+    ],
+    opcionesEn: [
+      { texto: "I am not interested in its development and usually disengage when it requires effort or care.", peso: 0 },
+      { texto: "I try to care for it when I can, although I sometimes give up when results take time.", peso: 1 },
+      { texto: "I understand that growth takes time, and I try to care for and protect plant life within my means.", peso: 2 }
+    ],
+    referenciaBiblica: "Lucas 13:6-9",
+    referenciaBiblicaEn: "Luke 13:6-9",
+    espejo: "Jesús relata la parábola de una higuera a la que se concede más tiempo y cuidado antes de decidir su destino. Su enseñanza espiritual sobre la oportunidad de cambiar inspira también una reflexión actual sobre la paciencia y la atención que requiere cultivar.",
+    espejoEn: "Jesus tells the parable of a fig tree given more time and care before its fate is decided. His spiritual teaching about the opportunity to change also inspires a modern reflection on the patience and attention cultivation requires."
+  },
+  {
+    id: 33,
+    bloque: 11,
+    categoria: "La Siembra, el Cultivo y sus Frutos",
+    categoriaEn: "Sowing, Cultivation and Their Fruits",
+    enunciado: "Cuando utilizás los frutos de la tierra, ¿procurás aprovecharlos responsablemente y reconocer que su producción depende de procesos naturales que debemos respetar?",
+    enunciadoEn: "When you use the fruits of the earth, do you try to make responsible use of them and recognize that their production depends on natural processes we should respect?",
+    opciones: [
+      { texto: "Consumo y descarto sin prestar atención al origen de lo que recibo ni al impacto de mis decisiones.", peso: 0 },
+      { texto: "Valoro lo que la tierra produce, aunque no siempre considero cómo mis hábitos afectan esos recursos.", peso: 1 },
+      { texto: "Aprovecho responsablemente los frutos de la tierra y procuro respetar los ciclos naturales que hacen posible su crecimiento.", peso: 2 }
+    ],
+    opcionesEn: [
+      { texto: "I consume and discard without paying attention to where things come from or the impact of my decisions.", peso: 0 },
+      { texto: "I value what the earth produces, although I do not always consider how my habits affect those resources.", peso: 1 },
+      { texto: "I make responsible use of the earth's fruits and try to respect the natural cycles that make their growth possible.", peso: 2 }
+    ],
+    referenciaBiblica: "Marcos 4:26-29",
+    referenciaBiblicaEn: "Mark 4:26-29",
+    espejo: "Jesús compara el Reino de Dios con una semilla que crece hasta dar fruto, describiendo un proceso que el sembrador no controla por completo. Esta imagen nos permite reflexionar hoy sobre el respeto a los ciclos naturales y el uso responsable de lo que producen.",
+    espejoEn: "Jesus compares the Kingdom of God to a seed that grows and bears fruit, describing a process the sower does not fully control. Today, this image allows us to reflect on respecting natural cycles and using what they produce responsibly."
   }
 ];
