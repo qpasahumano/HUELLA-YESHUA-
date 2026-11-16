@@ -299,6 +299,65 @@
       box-sizing: border-box;
     }
 
+    /* Compactación exclusiva de las preguntas 31, 32 y 33. */
+    .tarjeta-pergamino.pregunta-extensa .contenido-pergamino > div:first-child {
+      font-size: 0.66rem !important;
+      line-height: 1.15 !important;
+      margin-bottom: 3px !important;
+      letter-spacing: 0.3px !important;
+    }
+    .tarjeta-pergamino.pregunta-extensa .referencia-biblica {
+      font-size: 0.68rem;
+      line-height: 1.16;
+      padding: 2px 4px;
+      margin-bottom: 3px;
+    }
+    .tarjeta-pergamino.pregunta-extensa .referencia-biblica strong {
+      font-size: 0.73rem;
+    }
+    .tarjeta-pergamino.pregunta-extensa .texto-espejo {
+      font-size: 0.68rem !important;
+      line-height: 1.18;
+    }
+    .tarjeta-pergamino.pregunta-extensa .pregunta-enunciado h3 {
+      font-size: 0.71rem;
+      line-height: 1.18;
+      margin-bottom: 4px;
+    }
+    .tarjeta-pergamino.pregunta-extensa .opciones-lista { gap: 3px; }
+    .tarjeta-pergamino.pregunta-extensa .opcion-btn {
+      font-size: 0.69rem;
+      line-height: 1.18;
+      padding: 4px 6px;
+    }
+
+    /* La pantalla final conserva visible el botón para reiniciar. */
+    #quiz-container:has(.resultado-final) {
+      overflow-y: auto;
+      justify-content: safe center;
+      scrollbar-width: none;
+    }
+    #quiz-container:has(.resultado-final)::-webkit-scrollbar { display: none; }
+    #preguntas-dinamicas:has(.resultado-final) {
+      max-height: none;
+      flex-shrink: 0;
+      justify-content: flex-start;
+    }
+    .resultado-final {
+      padding-bottom: 4px !important;
+    }
+    .resultado-final h2 { font-size: 1.2rem; margin: 0 0 8px; }
+    .resultado-final .contenedor-huella-usuario {
+      margin: 5px auto !important;
+      width: 110px !important;
+      height: 110px !important;
+    }
+    .resultado-final .texto-invitacion {
+      margin-bottom: 8px !important;
+      font-size: 0.75rem !important;
+    }
+    #btn-reiniciar { display: inline-block; max-width: 100%; }
+
     /* Categoría / Título del bloque dentro del pergamino en marrón oscuro y tipografía Cinzel */
     .tarjeta-pergamino .categoria-bloque,
     .tarjeta-pergamino .categoria-pregunta,
