@@ -183,14 +183,14 @@ function renderizarPregunta() {
   }
 
   preguntasDiv.innerHTML = `
-    <div class="tarjeta-pergamino">
+    <div class="tarjeta-pergamino${p.id >= 31 && p.id <= 33 ? ' pregunta-extensa' : ''}">
       <div class="contenido-pergamino">
         <div style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; color: #261004; margin-bottom: 6px; font-weight: 700; font-family: 'Cinzel', serif;">
           📌 ${categoriaTexto}
         </div>
         <div class="referencia-biblica">
           <strong>📖 ${refBiblicaTexto}</strong><br>
-          <span style="font-size: 0.84rem; font-style: italic;">"${espejoTexto}"</span>
+          <span class="texto-espejo" style="font-size: 0.84rem; font-style: italic;">"${espejoTexto}"</span>
         </div>
         <div class="pregunta-enunciado"><h3>${p.id}. ${enunciadoTexto}</h3></div>
         <div class="opciones-lista">
